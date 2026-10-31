@@ -69,3 +69,19 @@ body{background:linear-gradient(160deg,#fdeef8 0%,#f1e8fb 45%,#e6dcf8 100%)}
 .card,.panel,.tab{background:color-mix(in srgb,var(--card) 80%,transparent);backdrop-filter:blur(12px)}
 /* ---- WhatsApp ---- */
 .wa{background:linear-gradient(135deg,#25d366,#128c7e)!important;color:#fff!important;box-shadow:0 8px 22px rgba(18,140,126,.35)!important}
+
+/* ---- Dark mode: lilac text ---- */
+@media(prefers-color-scheme:dark){
+:root:not([data-theme="light"]){--ink:#e2d0fb;--mut:#bba6de;--hd:#d9c4fb}
+:root:not([data-theme="light"]) .land h1,
+:root:not([data-theme="light"]) .top h1,
+:root:not([data-theme="light"]) .sec h2,
+:root:not([data-theme="light"]) .panel h2,
+:root:not([data-theme="light"]) .lbl,
+:root:not([data-theme="light"]) .pr,
+:root:not([data-theme="light"]) .tot b,
+:root:not([data-theme="light"]) .up,
+:root:not([data-theme="light"]) .btn.ghost{color:var(--hd)}
+:root:not([data-theme="light"]) .btn.ghost,
+:root:not([data-theme="light"]) .up{border-color:#6a4f93}
+}
